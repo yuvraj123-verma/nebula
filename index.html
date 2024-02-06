@@ -26,12 +26,13 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
     </head>
 
     <body>
 
         <!-- Carousel Start -->
-        <div class="hero-start">
+        <!-- <div class="hero-start">
             <nav>
                 <li><a href="/" style="color: #fff; font-size: 40px; font-weight: 600;">Nebula</a></li>
                 <ul>
@@ -51,7 +52,129 @@
                     <a href="#contact-section" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contact Us</button></a>
                 </div>
             </div>
+        </div> -->
+        
+
+        <!-- <header>
+            <nav>
+                <li><a href="/" style="color: #fff; font-size: 40px; font-weight: 600;">Nebula</a></li>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                </ul>
+            </nav>
+        </header> -->
+
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" fill="#ffffff"/></svg></a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="/#contact-section">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="/">Nebula</a></li>
+                <li onclick="showSiderbar()" class="menu-bar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" fill="#ffffff"/></svg></a></li>
+            </ul>
+        </nav>
+    
+        <!-- carousel -->
+        <div class="carousel py-5 pt-5">
+            <!-- list item -->
+            <div class="list">
+                <div class="item">
+                    <img src="img/carousal-1.jpg">
+                    <div class="content">
+                        <div class="title">Crafting</div>
+                        <div class="title">Seamless</div>
+                        <div class="topic">Web Solutions</div>
+                        <div class="des">
+                            <!-- lorem 50 -->
+                            Journey into the digital realm with us. Our tight-knit team of experts transforms your visionary ideas into interactive and scalable web applications. Embrace the power of innovative web development that goes beyond pixels and code - it's an experience.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/carousal-5.jpg">
+                    <div class="content">
+                        <div class="title">Innovative</div>
+                        <div class="topic">Mobile Experiences</div>
+                        <div class="des">
+                            Step into the future of mobile innovation. Our specialized team is dedicated to crafting user-centric mobile apps that not only meet but exceed expectations. Elevate your brand and captivate audiences with our mobile app development expertise.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/carousal-3.jpg">
+                    <div class="content">
+                        <div class="title">Empowering Businesses</div>
+                        <div class="title">with</div>
+                        <div class="topic">AI/ML</div>
+                        <div class="des">
+                            Unleash the potential of artificial intelligence. We don't just offer solutions; we spark a revolution. Dive into the future with our AI expertise, where data-driven insights and automation redefine how businesses innovate and operate efficiently.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/carousal-6.jpg">
+                    <div class="content">
+                        <div class="title">Elevate Experiences with Intuitive</div>
+                        <div class="topic">Design</div>
+                        <div class="des">
+                            Crafting digital journeys that resonate. Our UI/UX solutions go beyond aesthetics – they create seamless, user-centric experiences. Immerse your audience in interfaces that not only look stunning but intuitively guide them through a world of possibilities
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- list thumnail -->
+            <div class="thumbnail">
+                <div class="item">
+                    <img src="img/carousal-1.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Web Development
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/carousal-5.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Mobile Development
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/carousal-3.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Artificial Intelligence
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/carousal-6.jpg">
+                    <div class="content">
+                        <div class="title">
+                            UI/UX Designing
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- next prev -->
+    
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <!-- time running -->
+            <div class="time"></div>
         </div>
+
+
         <!-- Carousel End -->
 
 
@@ -110,131 +233,6 @@
         </div>
 
         <!-- About End -->
-
-        <!-- services crousial start-->
-        <!-- carousel -->
-    <div class="carousel py-5 pt-5">
-        <!-- list item -->
-        <div class="list">
-            <div class="item">
-                <img src="img/img1.jpg">
-                <div class="content">
-                    <div class="author">LUNDEV</div>
-                    <div class="title">DESIGN SLIDER</div>
-                    <div class="topic">ANIMAL</div>
-                    <div class="des">
-                        <!-- lorem 50 -->
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-                    </div>
-                    <div class="buttons">
-                        <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/img2.jpg">
-                <div class="content">
-                    <div class="author">LUNDEV</div>
-                    <div class="title">DESIGN SLIDER</div>
-                    <div class="topic">ANIMAL</div>
-                    <div class="des">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-                    </div>
-                    <div class="buttons">
-                        <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/img3.jpg">
-                <div class="content">
-                    <div class="author">LUNDEV</div>
-                    <div class="title">DESIGN SLIDER</div>
-                    <div class="topic">ANIMAL</div>
-                    <div class="des">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-                    </div>
-                    <div class="buttons">
-                        <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/img4.jpg">
-                <div class="content">
-                    <div class="author">LUNDEV</div>
-                    <div class="title">DESIGN SLIDER</div>
-                    <div class="topic">ANIMAL</div>
-                    <div class="des">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-                    </div>
-                    <div class="buttons">
-                        <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- list thumnail -->
-        <div class="thumbnail">
-            <div class="item">
-                <img src="img/img1.jpg">
-                <div class="content">
-                    <div class="title">
-                        Name Slider
-                    </div>
-                    <div class="description">
-                        Description
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/img2.jpg">
-                <div class="content">
-                    <div class="title">
-                        Name Slider
-                    </div>
-                    <div class="description">
-                        Description
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/img3.jpg">
-                <div class="content">
-                    <div class="title">
-                        Name Slider
-                    </div>
-                    <div class="description">
-                        Description
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/img4.jpg">
-                <div class="content">
-                    <div class="title">
-                        Name Slider
-                    </div>
-                    <div class="description">
-                        Description
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- next prev -->
-
-        <div class="arrows">
-            <button id="prev"><</button>
-            <button id="next">></button>
-        </div>
-        <!-- time running -->
-        <div class="time"></div>
-    </div>
-        <!-- service crousial end-->
 
 
         <!-- Services Start -->
